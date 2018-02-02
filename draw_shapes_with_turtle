@@ -1,0 +1,79 @@
+"""
+This is written in Python 2.7 and can be run on idle or through a terminal running
+Python 2.7. 
+
+Also, the code can be copied and pasted into Repl.it (Python with Turtles) and run
+successfully there. https://repl.it/languages and type Python in search bar
+
+The code is based off the Udacity Fullstack course and the core code is taken from the 
+lesson with modifications made by the authur.
+"""
+
+import turtle
+
+def draw_square(some_turtle):
+     for i in range(4):
+         some_turtle.forward(200)
+         some_turtle.left(90)
+
+def draw_triangle (some_turtle):
+     for i in range(3):
+         some_turtle.backward(200)
+         some_turtle.right (120)
+         
+def draw_shapes():
+     window = turtle.Screen()
+     window.bgcolor("black")
+     
+
+     brad = turtle.Turtle()
+     brad.shape("circle")
+     brad.color("purple", "yellow")
+     brad.pensize(2)
+     brad.speed("fastest")
+     
+     for i in range(60):
+         draw_square(brad)
+         brad.right(6)
+
+     susan = turtle.Turtle()
+     susan.shape("classic")
+     susan.color("blue","white")
+     susan.pensize(2)
+     susan.speed("fastest")
+
+     
+     for i in range(60):
+         draw_triangle(susan)
+         susan.right(6)
+         
+     angie = turtle.Turtle()
+     angie.shape("arrow")
+     angie.color("green","white")
+     angie.pensize(2)
+     angie.speed("fastest")
+     
+     for i in range (30):
+         angie.circle(75)
+         angie.right(12)
+
+     lisa = turtle.Turtle()
+     lisa.shape("arrow")
+     lisa.color("white")
+     lisa.pensize(2)
+     lisa.speed("fastest")
+     
+     for i in range (18):
+         lisa.circle(50)
+         lisa.right(20)
+
+     lisa = turtle.Turtle()
+     lisa.shape("circle")
+     lisa.color("black")
+     lisa.pensize(4)
+     lisa.speed("fastest")
+     
+     for i in range (10):
+         lisa.circle(25)
+         lisa.right(36)
+draw_shapes()
