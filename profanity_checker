@@ -1,0 +1,31 @@
+"""
+Check your txt file for profanity
+Written in Python 2.7
+Must be run on your system interpreter, idle or terminal
+running Python 2.7.
+You will need change the code and write in the path to a txt file in
+your system.
+"""
+
+import urllib
+
+
+def read_text():
+    # In ("")type in the path to your own file on your system
+    quotes = open("/Users/beetledore/Desktop/movie_quotes.txt")
+    contents_of_file = quotes.read()
+    quotes.close()
+    check_profanity(contents_of_file)
+
+
+def check_profanity(text_to_check):
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=" + text_to_check)  # NOQA
+    output = connection.read()
+    connection.close()
+    if "true" in output:
+        print("Bad Word Alert!")
+    elif "false" in output:
+        print("You're clear - no bad words present")
+    else:
+        print("Your file can not be read")
+read_text()
