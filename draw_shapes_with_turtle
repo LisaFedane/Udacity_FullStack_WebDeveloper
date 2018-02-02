@@ -2,11 +2,12 @@
 This is written in Python 2.7 and can be run on idle or through a terminal running
 Python 2.7. 
 
-Also, the code can be copied and pasted into Repl.it (Python with Turtles) and run
-successfully there. https://repl.it/languages and type Python in search bar
+Also, the code can be copied and pasted into Repl.it and run
+successfully there. https://repl.it/languages and type Python in search bar and pick
+Python (Turtles). 
 
 The code is based off the Udacity Fullstack course and the core code is taken from the 
-lesson with modifications made by the authur.
+lesson with modifications made by me.
 """
 
 import turtle
