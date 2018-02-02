@@ -1,0 +1,26 @@
+"""
+Udacity lesson to build code that will launch a youtube video
+to prompt the user to take a break. 
+Written in Python 2.7 and will need to be run with a 
+interpreter, idle or terminal with python 2.7
+"""
+
+
+import webbrowser
+import time
+
+# User inputs how many breaks they want to take here
+total_breaks = 1
+# Counter starts at 0 
+break_count = 0
+
+print("this program started on "+time.ctime())
+
+while(break_count<total_breaks):
+     # User inputs time frame here in seconds between breaks
+     # Ex. for 8 hours with 4 breaks would be 2*60*60
+     time.sleep(0)
+     # User can paste in any youtube video here that will pop up
+     # for the break reminder. 
+     webbrowser.open ("https://www.youtube.com/watch?v=zSgiXGELjbc")
+     break_count = break_count + 1
