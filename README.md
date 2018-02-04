@@ -2,7 +2,7 @@
 
 #### This respository will be a collection of coursework, all of which will have a root in code shown in the lessons however each project challenges the student to build their own code around the root code. 
 
-##### On a side note - some information about why I took this program
+### On a side note - some information about why I took this program
 
 I was the recipient of the 2018 "Google Developer Challenge Scholarship" 
 through Udacity but the scholarship was for the Android Developer 
